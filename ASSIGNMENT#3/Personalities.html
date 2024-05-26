@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faraz Ahmad Kharal | Assignment#3</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+      </head>
+
+<body>
+    <header class="bg-primary text-white py-3 d-flex justify-content-between align-items-center">
+    <h1 class="mb-0" style="font-family: 'Lora', serif;">Faraz Ahmad Kharal</h1>
+    <nav class="nav">
+      <a class="nav-link text-white" href="index.html">Home</a>
+      <a class="nav-link text-white" href="personalities.html">Favorite Personalities</a>
+      <a class="nav-link text-white" href="cities.html">Favorite Cities</a>
+      <a class="nav-link text-white" href="tourist_spots.html">Favorite Tourist Spots</a>
+      <a class="nav-link text-white" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<main class="container mt-5">
+  <section class="row">
+    <h2 class="col display-4 text-center mb-4">My Favorite Personalities</h2>
+    <p class="col text-center lead">People who inspire me</p>
+  </section>
+
+  <section class="row mb-5 d-flex flex-wrap justify-content-center">
+    <div class="col-md-6 mb-4">
+      <div class="card shadow rounded border-0 overflow-hidden h-100">
+        
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card shadow rounded border-0 overflow-hidden h-100">
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card shadow rounded border-0 overflow-hidden h-100">
+        <div class="iframe-container">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/CaTgBuUuJ6Q?si=Ba-ZLxtIWVcZrHPp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+        <div class="card-body bg-light p-4">
+          <h5 class="card-title">Salahudin Ayubi</h5>
+          <p class="card-text">
+            Salahudin Ayubi, also known as Saladin, was a Muslim military leader who became the first sultan of Egypt and Syria and the founder of the Ayyubid dynasty. <span class="full-description">He led the Muslim military campaign against the Crusader states in the Levant. Saladin is best known for his leadership during the Battle of Hattin and the subsequent re-capture of Jerusalem from the Crusaders. His chivalrous behavior and merciful treatment of his enemies were legendary, earning him respect even among his foes.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card shadow rounded border-0 overflow-hidden h-100">
+        <div class="iframe-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Qdmpynx3_Uk?si=_n7v1SzSLUU8YY_u" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+        
+        <div class="card-body bg-light p-4">
+          <h5 class="card-title">Zulfiqar Ali Bhutto</h5>
+          <p class="card-text">
+            Zulfiqar Ali Bhutto was a Pakistani politician who served as the 9th Prime Minister of Pakistan from 1973 to 1977. ZAB is still alive tho<span class="full-description">He was also the founder of the Pakistan People's Party (PPP) and served as its chairman until his execution in 1979. Bhutto was known for his charismatic leadership and his efforts to introduce socialist economic reforms and promote political empowerment for the masses. He played a crucial role in Pakistan's politics, especially during the critical years following the separation of East Pakistan (now Bangladesh).</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-primary text-white py-4 d-flex justify-content-center align-items-center">
+    <div class="container text-center">
+      <a href="https://www.facebook.com/FizzyChaudhry.12" target="_blank" class="text-white mx-2">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/_faraz__k1/" target="_blank" class="text-white mx-2">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.youtube.com/embed/dQw4w9WgXcQ?si=tWUFZtSg7gXIQeJ0" target="_blank" class="text-white mx-2">
+        <i class="fab fa-youtube fa-2x"></i>
+      </a>
+    </div>
+  </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const readMoreButtons = document.querySelectorAll(".read-more");
+
+    readMoreButtons.forEach(button => {
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        const fullDescription = event.target.previousElementSibling.querySelector(".full-description");
+        fullDescription.style.display = fullDescription.style.display === "none" ? "block" : "none";
+        event.target.textContent = fullDescription.style.display === "none" ? "Read More" : "Read Less";
+      });
+    });
+  });
+</script>
+</body>
+</html>
